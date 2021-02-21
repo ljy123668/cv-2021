@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>* {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eee;
+            margin: 20px 0;
+
+        }
+
+        article {
+            width: 21cm;
+            min-height: 29.7cm;
+            background-color: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+        }</style>
+    <style media="print">body {
+            margin: 0;
+        }
+
+        .page2 {
+            page-break-before: always;
+            margin-top: 30px;
+        }</style>
+    <style>body {}
+
+        p {
+            margin: .3em 0;
+        }
+
+        h1 {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        strong {
+            font-weight: normal;
+            color: #f60;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+
+        p,
+        li {
+            color: #666;
+        }
+
+        strong {
+            font-weight: normal;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        .bio {
+            position: relative;
+        }
+
+        .bio img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }</style>
+    <style>.projects p {
+            color: #666;
+        }
+
+        .projects strong {
+            color: #f60;
+        }
+
+        .projects>ol {
+            margin-top: 0;
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        .projects>ol>li {
+            margin-bottom: 24px;
+        }
+
+        .projects>ol>li>header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .projects>ol>li h3 {
+            display: inline-block;
+        }</style>
+    <style>.skills {}
+
+        #skills {
+
+            width: 500px;
+            height: 270px;
+        }
+
+        @media print {
+            #skills {
+                display: none;
+            }
+        }
+
+
+        .skills>.wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills>.wrapper>:first-child {
+            margin-right: 24px;
+        }
+
+        .skills>.wrapper>#skills {}
+
+        .skills>.wrapper>ul {
+            color: #666;
+        }
+
+        .skills>.wrapper strong {
+            color: #f60;
+        }
+
+        .skills>.wrapper>ul>li {
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }</style>
+    <style>.openSource header img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .openSource>ul>li {
+            margin-bottom: 24px;
+        }
+
+        .openSource header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }</style>
+    <style>.jobs>ol>li {
+            margin: 12px 0;
+        }
+
+        .jobs header {
+            display: flex;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .jobs header>h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .jobs header>h4 {
+            margin-left: 1em;
+            font-size: 18px;
+        }
+
+        .jobs header>span {
+            font-size: 18px;
+            margin-left: auto;
+        }</style>
+    <style>@media (max-width: 500px) {
+            body {
+                margin: 0;
+            }
+
+            article {
+                width: auto;
+                height: auto;
+            }
+
+            .bio img {
+                display: none;
+            }
+
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .jobs header {
+                flex-direction: column;
+            }
+
+            .jobs header>h3,
+            .jobs header>h4,
+            .jobs header>span {
+                margin: 0;
+            }
+        }</style>
+</head>
+
+<body>
+    <article>
+        <section class="bio">
+            <h1>赵伟棋</h1>
+            <p>男 | 24岁 | 前端开发工程师 | 长春</p>
+            <p>手机: <a href="tel:13610707193">13610707193</a> | 微信: a651507008 | 邮箱: <a href="mailto:651507008@qq.com">651507008@qq.com</a></p>
+        </section>
+        <section class="skills">
+            <h2>技能</h2>
+            <div class="wrapper">
+                <ul>
+                    <li>熟练掌握静态页面制作技巧，能将设计稿完美还原成页面</li>
+                    <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session等</li>
+                    <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                    <!-- <li>熟练掌握 React 全家桶的使用，包括 create-react-app、ReactRouter、Redux等</li> -->
+                    <li>熟悉 ES6,包括 let / const / Promise / await / 解构赋值 </li>
+                    <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+                    <li>了解 <strong>Webpack</strong> 的配置和优化</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="jobs">
+            <h2>工作经历</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3>吉林文德孚</h3>
+                        <h4>前端开发工程师</h4>
+                        <span><time>2019年6月</time>~<time>2020年2月</time></span>
+                    </header>
+                    <ul>
+                        <li>
+                            负责孚地卖场电商平台的开发
+                        </li>
+                        <li>
+                            对项目进行开发和维护，与后端对接数据后进行效果展示；
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <header>
+                        <h3>吉林盛世九州科技有限公司</h3>
+                        <h4>前端开发工程师</h4>
+                        <span><time>2020年2月</time>~<time>2020年12月</time></span>
+                    </header>
+                    <ul>
+                        <li>
+                            独立负责九州代驾出行小程序的开发与维护(Vue,uni-app)
+                        </li>
+                        <li>
+                            负责全部门移动端页面开发和对接，九州后台超级管理系统的开发，
+                        </li>
+                        <li>
+                            项目主要功能有呼叫代驾，取消代驾，微信支付，一键登录，优惠券等
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section class="projects">
+            <h2>项目经历</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3>纸农UI</h3>
+                        <a href="https://github.com/ljy123668/zhinong-ui">源码链接</a>
+                        <a href="https://ljy123668.github.io/zhinong-ui/">项目预览</a>
+                    </header>
+                    <p>
+                        一个基于 <strong>Vue3</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
+                    </p>
+                    <p>
+                        主要组件有按钮，标签页，输入框，布局，文字提示，折叠面板，弹出框等。
+                    </p>
+                    <p>
+                        制作过程让我对 TypeScript 和单元测试有了新的认识。
+                    </p>
+                </li>
+                <li>
+                    <header>
+                        <h3>九州代驾(小程序)</h3>
+                        <!-- <a href="#">源码链接</a>
+                        <a href="#">项目预览</a> -->
+                    </header>
+                    <p>
+                        一个基于 <strong>Vue</strong> / <strong>Websocket</strong> / <strong>uni-app</strong> /
+                        <strong>高德地图Api</strong> 的微信小程序应用。
+                    </p>
+                    <p>
+                        主要功能有呼叫代驾，取消代驾，微信支付，一键登录，优惠券等。
+                    </p>
+                    <p>
+                        该项目大量使用了 uni-app的Api，了解了小程序开发配置等问题, 让我对小程序开发有了深刻的理解和应用
+                    </p>
+                </li>
+                <li>
+                    <header>
+                        <h3>小纸记账</h3>
+                        <a href="https://github.com/ljy123668/zhinong-money-vue">源码链接</a>
+                        <a href="#">项目预览</a>
+                    </header>
+                    <p>
+                        一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+                    </p>
+                    <p>
+                        这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账。
+                    </p>
+                    <p>
+                        该项目大量使用了 Vue / TypeScript, 让我对 Vue 有了深刻的理解和应用
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section class="openSource">
+            <h2>开源项目</h2>
+            <ul>
+                <li>
+                    <header>
+                        <h3>纸农UI-vue3版</h3>
+                        <a href="https://github.com/ljy123668/zhinong-ui-vue3">源码链接</a>
+                        <a href="https://ljy123668.github.io/zhinong-ui-website/#/">项目预览</a>
+                    </header>
+                    <p>
+                        一个基于 <strong>Vue3</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
+                    </p>
+                    <p>
+                        主要组件有日期选择器，弹出框，下拉更新，树形选择器等。
+                    </p>
+                    <p>
+                        制作过程让我对 TypeScript 和单元测试有了新的认识。
+                    </p>
+                </li>
+                <!-- <li>
+                    <header>
+                        <h3>简易画板</h3>
+                        <a href="#">源码链接</a>
+                        <a href="#">项目预览</a>
+                    </header>
+                    <p>我在学习 Canvas 时做的一个小作品</p>
+                </li>
+                <li>
+                    <header>
+                        <h3>会动的皮卡丘</h3>
+                        <a href="#">源码链接</a>
+                        <a href="#">项目预览</a>
+                    </header>
+                    <p>我在学习 CSS3 和动画时制作的一个小作品</p>
+                </li> -->
+            </ul>
+        </section>
+        <section class="others">
+            <h2>其他链接</h2>
+            <ul>
+                <li><a href="https://www.yuque.com/zhaoweiqi-tedir/ne2v3e">我的博客</a>，目前已有 22 篇技术文章</li>
+                <li><a href="https://github.com/ljy123668">我的 GitHub地址</a>，过去三个月有200次提交</li>
+            </ul>
+        </section>
+
+
+        <section class="education">
+            <h2>教育经历</h2>
+            <p>
+                <span><time>2015年</time>~<time>2018年</time></span>
+                长春信息技术职业学校 专科
+            </p>
+        </section>
+    </article>
+</body>
+
+</html>
